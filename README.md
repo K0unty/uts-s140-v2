@@ -8,6 +8,7 @@
 3. [Main Docs](#main-docs)
    1. [Official Installation with `typescript TS`](#official-installation-with-typescript-ts)
 4. [Using `bun`](#using-bun)
+   1. [RegardingDeployment](#regardingdeployment)
 
 ---
 
@@ -47,3 +48,11 @@ bunx create-react-app my-app --template typescript
 ```
 
 - This method finally works the issue was you didnt see the latest docs which required the `--tepmplate` keyword to run the TS version
+
+## RegardingDeployment
+
+| D     | O   |
+| ----- | --- |
+| Vercl | ✅  |
+| Rendr | ❌  |
+| Netly | ❌  |
