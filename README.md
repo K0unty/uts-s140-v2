@@ -38,4 +38,6 @@
 npx create-react-app my-app --template typescript
 ```
 
+- This method appears to be working..
+
 # Using `bun`
