@@ -56,3 +56,5 @@ bunx create-react-app my-app --template typescript
 | Vercl | ✅  |
 | Rendr | ❌  |
 | Netly | ❌  |
+
+00
