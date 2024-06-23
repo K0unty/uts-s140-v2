@@ -6,4 +6,14 @@ html {
 
 body {
   margin: 0;
+  background-color: #020617;
+  color: transparent; /* Set the text color to transparent */
+  background-image: linear-gradient(
+    to right,
+    #33001b,
+    #ff0084
+  ); /* Use the linear gradient as the background image */
+  -webkit-background-clip: text; /* Clip the background to the text for WebKit browsers */
+  background-clip: text; /* Clip the background to the text for other browsers */
+  -webkit-text-fill-color: transparent; /* Set the text fill color to transparent for WebKit browsers */
 }
