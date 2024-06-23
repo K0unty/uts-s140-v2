@@ -41,3 +41,9 @@ npx create-react-app my-app --template typescript
 - This method appears to be working..
 
 # Using `bun`
+
+```sh
+bunx create-react-app my-app --template typescript
+```
+
+- This method finally works the issue was you didnt see the latest docs which required the `--tepmplate` keyword to run the TS version
