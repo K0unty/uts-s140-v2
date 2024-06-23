@@ -5,6 +5,7 @@
 
 1. [😁](#)
 2. [uts-s140-v2](#uts-s140-v2)
+3. [React App with `bun`](#react-app-with-bun)
 
 ---
 
@@ -21,4 +22,15 @@
 
 > THis is the main folder where the work will be done. See notezPanty
 
-jjjj
+# React App with `bun`
+
+[Official docs](https://react.dev/learn/start-a-new-react-project) - recommend using a framework. But for the tutzi, you will use vanilla method.
+
+Installation with bunx
+
+```sh
+bunx create-react-app my-app --typescript
+```
+
+- `--typescript` = Required for TypeScript
+- Now when you use this method , there is bun lock file
