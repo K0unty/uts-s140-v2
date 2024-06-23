@@ -34,3 +34,4 @@ bunx create-react-app my-app --typescript
 
 - `--typescript` = Required for TypeScript
 - Now when you use this method , there is bun lock file
+- Also instlling it inside a directory , instead of on root. When installing it will conflict of the other files so installing it insde a directory
