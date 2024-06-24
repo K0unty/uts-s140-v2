@@ -1,6 +1,11 @@
 import React from "react";
 import TodoList from "./componenets/TodoList";
+import NewTodo from "./componenets/NewTodo";
 
+/* 
+This function method below is the class method , but below it the 
+const App -- Method , is the functional programming which is the newere style
+*/
 // function App() {
 //   // const logoUrl = "https://i.ibb.co/7zgP572/image.png"; // Replace with the URL of the online image
 
@@ -14,7 +19,7 @@ const App: React.FC = () => {
   ];
   return (
     <div className="App">
-      {/* Component that add todos */}
+      <NewTodo />
       <TodoList items={todos} />
     </div>
   );
