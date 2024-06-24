@@ -1,4 +1,5 @@
 import React from "react";
+import TodoList from "./componenets/TodoList";
 
 // function App() {
 //   // const logoUrl = "https://i.ibb.co/7zgP572/image.png"; // Replace with the URL of the online image
@@ -7,7 +8,11 @@ import React from "react";
 // }
 
 const App: React.FC = () => {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <TodoList />
+    </div>
+  );
 };
 
 export default App;

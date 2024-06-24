@@ -6,14 +6,57 @@ html {
 
 body {
   margin: 0;
-  background-color: #020617;
-  color: transparent; /* Set the text color to transparent */
-  background-image: linear-gradient(
+  background-color: #020617; /* Set the text fill color to transparent for WebKit browsers */
+}
+
+/* Apply gradient to text elements */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+li,
+ul {
+  background: #fdfc47; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
     to right,
-    #33001b,
-    #ff0084
-  ); /* Use the linear gradient as the background image */
-  -webkit-background-clip: text; /* Clip the background to the text for WebKit browsers */
-  background-clip: text; /* Clip the background to the text for other browsers */
-  -webkit-text-fill-color: transparent; /* Set the text fill color to transparent for WebKit browsers */
+    #24fe41,
+    #fdfc47
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24fe41,
+    #fdfc47
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Style for unordered lists */
+ul {
+  list-style-type: none;
+  padding-left: 1.5em; /* Adjust as needed */
+}
+
+/* Custom bullet points */
+ul li::before {
+  content: "\2022"; /* Unicode for a bullet point */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+
+  /* Apply the same gradient to bullet points */
+  background: #fdfc47;
+  background: -webkit-linear-gradient(to right, #24fe41, #fdfc47);
+  background: linear-gradient(to right, #24fe41, #fdfc47);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
