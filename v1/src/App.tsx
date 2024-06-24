@@ -8,9 +8,14 @@ import TodoList from "./componenets/TodoList";
 // }
 
 const App: React.FC = () => {
+  const todos = [
+    { id: "t1", text: "Todo 1" },
+    { id: "t2", text: "Todo 2" },
+  ];
   return (
     <div className="App">
-      <TodoList />
+      {/* Component that add todos */}
+      <TodoList items={todos} />
     </div>
   );
 };

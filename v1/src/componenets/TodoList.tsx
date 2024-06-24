@@ -2,14 +2,13 @@
 
 import React from "react";
 
-const TodoList: React.FC = () => {
-  const todos = [
-    { id: "t1", text: "Todo 1" },
-    { id: "t2", text: "Todo 2" },
-  ];
+interface ToDoListProps {
+  items: { id: string; text: string }[];
+}
+const TodoList: React.FC<ToDoListProps> = (props) => {
   return (
     <ul>
-      {todos.map((todo) => (
+      {props.items.map((todo) => (
         <li key={todo.id}>{todo.text}</li>
       ))}
     </ul>
