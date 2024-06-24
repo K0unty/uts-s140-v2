@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import TodoList from "./componenets/TodoList";
 import NewTodo from "./componenets/NewTodo";
+import { Todo } from "./todo.model";
 
 /* 
 This function method below is the class method , but below it the 
@@ -13,13 +14,12 @@ const App -- Method , is the functional programming which is the newere style
 // }
 
 const App: React.FC = () => {
-  const todos = [
-    { id: "t1", text: "Todo 1" },
-    { id: "t2", text: "Todo 2" },
-  ];
-
+  const [todos, setTodos] = useState<Todo[]>([]);
   const todoAddhandler = (text: string) => {
-    console.log(text);
+    setTodos((prevTodos) => [
+      ...prevTodos,
+      { id: Math.random().toString(), text: text },
+    ]);
   };
 
   return (
