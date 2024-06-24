@@ -15,6 +15,7 @@ const App -- Method , is the functional programming which is the newere style
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
+
   const todoAddhandler = (text: string) => {
     setTodos((prevTodos) => [
       ...prevTodos,
@@ -22,10 +23,16 @@ const App: React.FC = () => {
     ]);
   };
 
+  const todoDelHandler = (todo: string) => {
+    setTodos((prevTodos) => {
+      return prevTodos.filter((t) => t.id !== todo);
+    });
+  };
+
   return (
     <div className="App">
       <NewTodo onAddTodo={todoAddhandler} />
-      <TodoList items={todos} />
+      <TodoList items={todos} onDeleteTodo={todoDelHandler} />
     </div>
   );
 };
