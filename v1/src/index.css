@@ -100,7 +100,7 @@ form {
   font-family: inherit;
   border: 1px solid;
   text-align: center;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .input-box:focus {
